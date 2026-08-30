@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://siddharthwahane.github.io/supertech-tools-center/sitemap.xml
+Sitemap: https://supertechtoolscenter.in/sitemap.xml
