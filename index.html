@@ -34,12 +34,13 @@ section{padding:72px 0}.title{text-align:center;margin-bottom:38px}.title h2{fon
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#4a5b70}.ico{font-size:38px}.card h3{color:var(--gold);font-size:22px;margin:10px 0 7px}.card p,.card li{color:var(--muted)}.card ul{padding-left:19px}
 .offers{display:grid;grid-template-columns:1fr 1fr;gap:22px}.offer{padding:30px;border-radius:18px;background:linear-gradient(145deg,#121b28,#080c13);border:2px solid var(--gold)}.offer.free{border-color:var(--green)}.offer h3{font-size:30px;color:var(--gold);margin:0 0 12px}.offer.free h3{color:var(--green)}.offer li{margin:9px 0;color:#dce2e9}.limited{display:inline-block;background:var(--red);padding:6px 11px;border-radius:7px;font-weight:900;font-size:12px;margin-bottom:10px}
 .products{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.product{background:#0e151f;border:1px solid var(--line);border-radius:13px;padding:19px 10px;text-align:center;font-weight:800}.product b{font-size:32px;display:block;margin-bottom:5px}
+.repair-proof{background:linear-gradient(145deg,#0d141f,#080c13)}.repair-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center}.repair-shot{margin:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 18px 45px #0006}.repair-shot img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover}.repair-shot figcaption{padding:14px 16px;font-weight:900;font-size:18px;text-align:center}.repair-shot.before figcaption{background:#b51623}.repair-shot.after figcaption{background:#087d49}.repair-arrow{font-size:48px;color:var(--gold);font-weight:900}.repair-note{text-align:center;color:var(--muted);margin:22px auto 0;max-width:760px}.repair-note strong{color:var(--text)}
 .about{background:#0c121b}.aboutbox{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}.aboutbox>div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px}.aboutbox h3{color:var(--gold);font-size:26px;margin-top:0}.aboutbox p{color:var(--muted)}
 .cta{text-align:center;background:linear-gradient(120deg,#161f2d,#080c12)}.cta h2{font-size:clamp(30px,5vw,48px);margin:0 0 8px}.cta p{color:var(--muted);font-size:18px}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}.contact .box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}.contact h3{color:var(--gold)}.number{font-size:30px;font-weight:900}
 footer{padding:28px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted)}footer strong{color:var(--gold)}
 .float-wa{position:fixed;right:20px;bottom:20px;z-index:100;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--green);font-size:28px;box-shadow:0 8px 25px #0008}
-@media(max-width:850px){nav{display:none}.grid2,.aboutbox,.contact,.offers{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.trustrow{grid-template-columns:repeat(2,1fr)}.offerbar .inner{flex-direction:column;text-align:center}.hero{padding-top:45px}}
+@media(max-width:850px){nav{display:none}.grid2,.aboutbox,.contact,.offers{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.trustrow{grid-template-columns:repeat(2,1fr)}.offerbar .inner{flex-direction:column;text-align:center}.hero{padding-top:45px}.repair-grid{grid-template-columns:1fr}.repair-arrow{transform:rotate(90deg);text-align:center;line-height:1}.repair-shot img{aspect-ratio:4/3}.repair-shot.before img{object-position:center 42%}.repair-shot.after img{object-position:center 35%}}
 </style>
 <script type="application/ld+json">
 {
@@ -89,6 +90,16 @@ footer{padding:28px 0;border-top:1px solid var(--line);text-align:center;color:v
 <div class="offer free"><span class="limited">LIMITED PERIOD</span><h3>🆓 FREE TOOL HEALTH CHECK</h3><ul><li>Motor Check</li><li>Carbon Brush Check</li><li>Switch & Wire Check</li><li>General Performance Check</li><li><b>Basic inspection: FREE</b></li></ul></div>
 <div class="offer"><span class="limited">SAVE MONEY</span><h3>🔧 REPAIR & SAVE OFFER</h3><ul><li>Expert Inspection</li><li>Repair Estimate</li><li>Spare Parts Options</li><li>Reliable Repair</li><li><b>नई machine खरीदने से पहले पुरानी machine check करवाइए!</b></li></ul></div>
 </div></div></section>
+
+<section class="repair-proof" id="repair-results"><div class="wrap"><div class="title"><h2>Real Repair Result</h2><p>हमारे workshop में की गई actual machine repair — before और after.</p></div>
+<div class="repair-grid">
+<figure class="repair-shot before"><img src="assets/repair-before.webp" alt="Damaged power tool before repair at Supertech Tools Center in Wadi, Nagpur" width="900" height="1200" loading="lazy" decoding="async"><figcaption>BEFORE REPAIR</figcaption></figure>
+<div class="repair-arrow" aria-hidden="true">➜</div>
+<figure class="repair-shot after"><img src="assets/repair-after.webp" alt="Power tool after housing repair at Supertech Tools Center in Wadi, Nagpur" width="900" height="1200" loading="lazy" decoding="async"><figcaption>AFTER REPAIR</figcaption></figure>
+</div>
+<p class="repair-note"><strong>टूटी machine? नई खरीदने से पहले repair estimate लीजिए.</strong><br>Power tools और welding machines के लिए inspection, repair और service support.</p>
+<div class="actions" style="justify-content:center"><a class="btn whatsapp" href="https://wa.me/919300048635?text=Hello%20Supertech%20Tools%20Center,%20I%20want%20to%20get%20my%20machine%20checked.">💬 Machine की Photo भेजें</a><a class="btn dark" href="tel:+919300048635">📞 Call 9300048635</a></div>
+</div></section>
 
 <section id="products"><div class="wrap"><div class="title"><h2>Tools We Service</h2><p>Bring your machine for inspection.</p></div>
 <div class="products"><div class="product"><b>🔩</b>Drill</div><a class="product" href="/angle-grinder-repair-wadi/"><b>⚙️</b>Angle Grinder</a><div class="product"><b>🪚</b>Cutter</div><div class="product"><b>🛠️</b>Polisher</div><div class="product"><b>⚡</b>Welding</div><div class="product"><b>🔧</b>Other Power Tools</div></div></div></section>
